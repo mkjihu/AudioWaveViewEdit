@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">micA_text2</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_sound_file_page">SoundFilePage</string>
+    <string name="title_activity_audio_edit_page">AudioEditPage</string>
+    <string name="title_activity_recording_page">RecordingPage</string>
+
+</resources>

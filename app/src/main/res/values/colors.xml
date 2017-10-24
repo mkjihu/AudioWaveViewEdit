@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    
+    <color name="colorPrimaryDark">#0080FF</color><!-- 頂部 -->
+    <color name="colorPrimary">#2894FF</color><!-- 下方 -->
+    <color name="colorAccent">#FF4081</color>
+    <color name="colo_w">#FFFFFF</color>
+
+
+    <color name="home_bar_text_normal">#6a6c6f</color>
+    <color name="home_bar_text_push">#ff5959</color>
+    <color name="textnormal">#adadad</color>
+
+    <color name="bccolo0">#FFFFFF</color>
+    <color name="bccolo1">#F0F0F0</color>
+    <color name="bccolo2">#E0E0E0</color>
+    <color name="bccolo4">#4F4F4F</color>
+    <color name="red_light">#ffff4444</color>
+    <color name="blue_light">#ff33b5e5</color>
+
+    
+    <color name="bccolo5">#FF5809</color>
+    
+    
+    
+    
+    
+    <!--  -->
+    <color name="waveform_selected">#33b5e5</color>
+	<color name="waveform_unselected">#195a72</color>
+	<color name="waveform_unselected_bkgnd_overlay">#0a242d</color>
+	<color name="selection_border">#ffffff</color>
+	<color name="playback_indicator">#ffff66</color>
+	<color name="grid_line">#66ffffff</color>
+	<color name="timecode">#ddffffdd</color>
+	<color name="timecode_shadow">#aa000000</color>
+	<color name="type_bkgnd_alarm">#88880000</color>
+	<color name="type_bkgnd_ringtone">#88008888</color>
+	<color name="type_bkgnd_notification">#88666600</color>
+	<color name="type_bkgnd_music">#88000000</color>
+	<color name="type_bkgnd_unsupported">#88cccccc</color>
+    
+    
+</resources>

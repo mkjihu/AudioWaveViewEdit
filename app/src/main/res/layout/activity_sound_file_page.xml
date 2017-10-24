@@ -1,0 +1,156 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mkjihu.audioedit.SoundFilePage" >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp" >
+
+    	<com.cokus.wavelibrary.view.WaveSurfaceView
+    	    android:id="@+id/wavesfv"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="150dp" />
+
+    	<com.cokus.wavelibrary.view.WaveformView
+    	    android:id="@+id/waveview"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="150dp"
+    	    android:visibility="invisible" />
+        <com.mkjihu.audioedit.view.RangeSeekBar2
+            android:id="@+id/bar2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            app:lineColorEdge="#335B5B5B"
+            app:lineColorSelected="#00272727"
+            app:progressHintMode="alwaysHide"
+            app:seekBarHeight="150dp"
+            app:seekBarMode="range"
+            app:thumbSize="35dp" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="測試純解碼音檔"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="解碼測試音頻" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="讀取PCM採樣訊號" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="讀取選擇音頻波形" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="播放音頻" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="位置：" />
+
+        <TextView
+            android:id="@+id/itemtx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="讀取桿" />
+
+    <SeekBar
+        android:id="@+id/sakker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="裁減區間控制" />
+
+    <com.jaygoo.widget.RangeSeekBar
+        android:id="@+id/seekbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cellMode="number"
+        app:progressHintMode="defaultMode"
+        app:seekBarHeight="3dp"
+        app:seekBarMode="range"
+        app:textPadding="15dp"
+        app:thumbSize="25dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" >
+
+        <Button
+            android:id="@+id/catere"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="裁剪" />
+
+        <EditText
+            android:id="@+id/toed1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="----" />
+
+        <EditText
+            android:id="@+id/toed2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00" />
+
+    </LinearLayout>
+
+</LinearLayout>

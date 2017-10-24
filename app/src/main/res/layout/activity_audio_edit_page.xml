@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mkjihu.audioedit.AudioEditPage" >
+
+    <RelativeLayout
+        android:id="@+id/lay1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/straight" >
+
+        <com.mkjihu.audioedit.view.RangeSeekBar2
+            android:id="@+id/bar2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            app:lineColorEdge="#335B5B5B"
+            app:lineColorSelected="#00272727"
+            app:max="100"
+            app:min="0"
+            app:progressHintMode="alwaysHide"
+            app:seekBarHeight="200dp"
+            app:seekBarMode="range"
+            app:thumbSize="35dp" />
+
+    </RelativeLayout>
+
+
+    <org.florescu.android.rangeseekbar.RangeSeekBar
+        android:id="@+id/seekbar1"
+        app:absoluteMaxValue="150"
+        app:absoluteMinValue="20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>    
+
+    <com.jaygoo.widget.RangeSeekBar
+        android:id="@+id/seekbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:textPadding="17dp"
+        app:min="0"
+        app:max="100"
+        app:reserve="60"
+        app:seekBarHeight="4dp"
+        app:thumbSize="20dp"
+        app:cellMode="number"
+        app:seekBarMode="range"
+        app:progressHintMode="alwaysHide"
+        />
+
+    <com.jaygoo.widget.RangeSeekBar
+        android:id="@+id/seekbar3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cellMode="number"
+        app:max="100"
+        app:min="0"
+        app:seekBarMode="single"
+        app:progressHintMode="alwaysHide"
+        app:seekBarHeight="4dp"
+        app:textPadding="17dp"
+        app:thumbSize="20dp" />
+
+</LinearLayout>
